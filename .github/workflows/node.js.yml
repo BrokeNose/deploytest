@@ -22,11 +22,7 @@ jobs:
       matrix:
         node-version: [14] # 템플릿 기본값 [14.x, 16.x, 18.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-    - name: Setup Node
-      uses: actions/setup-node@main
-      with:
-        node-version: 16
-        cache: 'npm'
+
 
     # uses 개념은 다른 사람이 작성한 내용을 실행하는 개념이다.
     # actions/checkout: Github의 마지막 커밋으로 Checkout 한다.
