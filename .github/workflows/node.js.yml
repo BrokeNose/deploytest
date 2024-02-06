@@ -56,7 +56,7 @@ jobs:
         with:
           repository: BrokeNose/Docker_cicd # 깃허브 배포용 레포로 지정 닉네임/레포이름
           ref: main  # branch
-          token: ${{ secrets.aws-tocken }} #  secrets에 깃허브 토큰도 넣어야됨
+          token: ${{ secrets.aws_token }} #  secrets에 깃허브 토큰도 넣어야됨
       - name: k8s manifest update
         run: |
           sed -i "s@ \
