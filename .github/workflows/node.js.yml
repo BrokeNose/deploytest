@@ -33,7 +33,7 @@ jobs:
     - name: Use Node.js 
       uses: actions/setup-node@v3
       with:
-        node-version: '16.8.2'
+        node-version: '16.x'
         cache: 'npm'
     # npm ci는  npm install과 같은 기능을 수정한다. 
     - run: npm install
